@@ -127,7 +127,7 @@
     </div>
   </section>
 
-  <!--                                                              /*  Урок 2  */                                    -->
+  <!--/*  Урок 2  */ -->
 
   <!--  Завдання №1: Для першого елементу списку зробіть колір тексту білим -->
   <!--   Використовуйте Селектор першої дитини :first-child. -->
@@ -154,13 +154,13 @@
     <div class='card-body'>
       <div class='second-task'>
         <ul>
-          <li>Елемент 1</li>
-          <li>Елемент 2</li>
+          <li class='list'>Елемент 1</li>
+          <li class='list'>Елемент 2</li>
         </ul>
 
         <ul>
-          <li>Елемент 1</li>
-          <li>Елемент 2</li>
+          <li class='list'>Елемент 1</li>
+          <li class='list'>Елемент 2</li>
         </ul>
       </div>
     </div>
@@ -228,17 +228,17 @@
     <div class='card-header'>Завдання 6</div>
     <div class='card-body'>
       <div class='only-child-task'>
-        <div>Текст блоку 1</div>
+        <div>Текст блоку 1!</div>
       </div>
       <div class='only-child-task'>
         <div>Текст блоку 2</div>
         <div>Текст блоку 2</div>
       </div>
       <div class='only-child-task'>
-        <div>Текст блоку 3</div>
+        <div>Текст блоку 3!</div>
       </div>
       <div class='only-child-task'>
-        <div>Текст блоку 4</div>
+        <div>Текст блоку 4!</div>
       </div>
     </div>
   </section>
@@ -261,7 +261,6 @@
 
   <!--  Завдання №8:  Застосуйте червоний фон до останнього абзацу в div з классом eight-task  -->
   <!--   Використовуйте Селектор останнього типу :last-of-type-->
-
   <section class='m-5 card'>
     <div class='card-header'>Завдання 8</div>
     <div class='card-body'>
@@ -279,11 +278,11 @@
   <!--   Використовуйте Селектор одиничного типу :only-of-type-->
 
   <section class='m-5 card'>
-    <div class='card-header'>Завдання 8</div>
+    <div class='card-header'>Завдання 9</div>
     <div class='card-body'>
       <div class='nine-task'>
         <div class='text-wrapper'>
-          <p>Це єдиний параграф в своїй категорії</p>
+          <p>Це єдиний параграф в своїй категорії(yellow)</p>
         </div>
         <div class='text-wrapper'>
           <p>Це перший параграф</p>
@@ -292,7 +291,7 @@
           <h3>Це другий заголовок h2</h3>
         </div>
         <div class='text-wrapper'>
-          <p>Це єдиний параграф в своїй категорії</p>
+          <p>Це єдиний параграф в своїй категорії(yellow)</p>
           <h2>Це третій заголовок h2</h2>
         </div>
       </div>
@@ -329,10 +328,10 @@
     <div class='card-header'>Завдання 2</div>
     <div class='card-body'>
       <ol class='lesson-three-task-two'>
-        <li value='1'>Елемент 1</li>
+        <li value='1'>Елемент 1(yellow)</li>
         <li> Елемент 2</li>
         <li>Елемент 3</li>
-        <li value='1'> Елемент 4</li>
+        <li value='1'> Елемент 4(yellow)</li>
       </ol>
     </div>
   </section>
@@ -347,7 +346,7 @@
       <ol class='lesson-three-task-three'>
         <li>Елемент 1</li>
         <li> Елемент 2</li>
-        <li value='3'>Елемент 3</li>
+        <li value='3'>Елемент 3(Red-background)</li>
         <li> Елемент 4</li>
       </ol>
     </div>
@@ -360,7 +359,7 @@
     <div class='card-header'>Завдання 4</div>
     <div class='card-body'>
       <div class='lesson-three-task-four'>
-        <button class='primary action'>Primary Button</button>
+        <button class='primary action'>Primary Button(Blue-background)</button>
         <button class='secondary action'>Secondary Button</button>
         <button class='action primary'>Tertiary Button</button>
       </div>
@@ -376,13 +375,14 @@
     <div class='card-body'>
       <div class='lesson-three-task-five'>
         <button class='secondary'>
-          Первинна кнопка
+          Первинна кнопка(Red-background)
         </button>
-        <button class='btn-secondary-action'>
+        {{!-- <button class='btn-action'> --}}
+        <button class='btn-secondary-action'></button>
           Другорядна кнопка
         </button>
         <button class='secondary-btn-second'>
-          Другорядна кнопка
+          Другорядна кнопка(Red-background)
         </button>
       </div>
     </div>
@@ -396,9 +396,9 @@
     <div class='card-body'>
       <div class='lesson-three-task-six'>
         <ul>
-          <li class='btn-primary'>Елемент 1</li>
+          <li class='btn-primary'>Елемент 1(color: green, background: white)</li>
           <li class='secondary'>Елемент 2</li>
-          <li class='button'>Елемент 3</li>
+          <li class='button'>Елемент 3(color: green, background: white)</li>
         </ul>
       </div>
     </div>
@@ -413,8 +413,8 @@
       <div class='lesson-three-task-seven'>
         <ul>
           <li class='btn-primary'>Елемент 1</li>
-          <li class='secondary'>Елемент 2</li>
-          <li class='button'>Елемент 3</li>
+          <li class='secondary'>Елемент 2(color: green, background: white)</li>
+          <li class='button'>Елемент 3(color: green, background: white)</li>
         </ul>
       </div>
     </div>
@@ -431,11 +431,11 @@
           <li>
             <span class='tag t'>tag t</span></li>
           <li>
-            <span class='tag s'>tag s</span></li>
+            <span class='tag s'>tag s(color: blue, background: white)</span></li>
           <li>
             <span class='tag'>tag</span></li>
           <li>
-            <span class='tag s'>tag s</span></li>
+            <span class='tag s'>tag s(color: blue, background: white)</span></li>
           <li>
             <span class='tag r'>tag r</span></li>
         </ul>
