@@ -10,13 +10,14 @@
     --size-d:  16px;
     --size-s:  14px;
     --size-l:  20px;
+    --size-vl: 36px;
 
     --color-border: #DEE2E6;
     --color-primary: #563D7C;
     --color-link: rgb(46, 46, 255);
     --color-white: #ffffff;
-    --color-title: #212529;
-    --color-text: #343a40;
+    --color-main-text: #5A5A5A;
+    --color-featured-text: #212529;
 
     --border-radius: 12px;
     --weight-title: 500;
@@ -26,7 +27,7 @@
 /* **** */
 .page {
     background: #ffffff;
-    padding: 0 15px;
+    padding: 0 var(--space-xm);
     display: flex;
     justify-content: center;
 }
@@ -36,7 +37,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* background:red; */
     gap:80px;/* gap:80px - відстань між секціями  */
 }
 /* **** */
@@ -111,20 +111,20 @@
 }
 
 .main_heading {
-    font-size: 36px;
-    color: #5A5A5A;
+    font-size: var(--size-vl);
+    color: var(--color-main-text);
     font-weight: var(--weight-title);
     line-height: 120%;
     padding-top: 120px;
-    padding-bottom: 24px;
+    padding-bottom: var(--space-l);
 }
 
 .main_description {
     font-size: var(--size-d);
-    color: #5A5A5A;
+    color: var(--color-main-text);
     font-weight: var(--weight-text);
     line-height: 170%;
-    padding-bottom: 24px;
+    padding-bottom: var(--space-l);
 }
 
 .button {
@@ -146,7 +146,6 @@
 
 .featured {
     display: flex;
-
     border-bottom: 1px solid var(--color-border);
 }
 
@@ -156,30 +155,37 @@
     align-items: left;
     text-align: left;
     gap: var(--space-l);
-    padding-left: 26px;
+    padding-left: var(--space-l);
     width: 332px;
+    padding-bottom: var(--space-l);
 }
 
 .card_image {
     height: 64px;
     width: 64px;
     border-radius: var(--border-radius);
+    padding-bottom: var(--space-l);
 }
 
 .card_title {
     font-size: 32px;
     font-weight: var(--weight-title);
-    color: var(--color-title);
+    color: var(--color-featured-text);
 }
 
-
+.card_text {
+    font-weight: var(--weight-text);
+    font-size: var(--size-d);
+    line-height: 1.5;
+    color: var(--color-featured-text);
+}
 
 .card_link {
-    color: var(--color-white);
-    background-color: var(--color-primary);
+    color: var(--color-link);
+    /* background-color: var(--color-primary); */
 }
 
-.form {
+.actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -188,31 +194,30 @@
     border-radius: var(--border-radius);
 }
 
-.form_content {
+.cardActions {
     display: flex;
     flex-direction: column;
-    gap: var(--space-m);
+    align-items: left;
+    text-align: left;
+    gap: var(--space-l);
+    padding-left: var(--space-l);
+    width: 240px;
+    /* padding-bottom: var(--space-l); */
 }
 
-.form_title {
-    font-size: 27px;
-    font-weight: var(--weight-title);
+.actions_title {
     color: var(--color-white);
-}
-
-.form_info {
-    font-size: var(--size-d);
+    font-size: var(--space-l);
     font-weight: var(--weight-text);
-    color: var(--color-white);
 }
 
-.form_button {
+.actions_button {
     background-color: var(--color-white);
-    width: 100%;
-    max-width: 160px;
+    width: 80%;
+    max-width: 240px;
     color: var(--color-text);
+    text-align: center;
 }
-
 
 .footer {
     padding: var(--space-l) 0;
