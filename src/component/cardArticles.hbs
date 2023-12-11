@@ -1,0 +1,13 @@
+{{#with data}}  
+  <div class="cardArticles">
+     <div class="cardImageArticles" style="background-image: url({{photo}})"></div>
+       <h2 class="cardArticlesTitle">{{name}}</h2>
+          <p class="cardArticlesText">{{description}}</p>
+           <a class="button" href="#">Read All</a>
+              {{#if isNew}}
+                <div class="badgeNew">
+                   <p>NEW</p>    
+                </div>
+              {{/if}}
+  </div>  
+{{/with}}    
