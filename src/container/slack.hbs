@@ -6,13 +6,14 @@
 		</title>
 		<meta charset='utf-8' />
 
-		<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
         <link rel="manifest" href="/fav/site.webmanifest">
         <link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link href='css/normalize.css' rel='stylesheet' />
 
@@ -22,25 +23,32 @@
 
 	<body>
         <div class="page">
-          <section class="page_section">
-	         <div class="page_content hero_section">
+          <section class="page_section">{{!-- Section-1 --}}
+	   <div class="page_content hero_section">
 
             <div class="hero">
+              <div class="hero_content">
                 <span class="hero_label">Slack Features</span>
+                {{!-- <span class="hero_label">SLACK FEATURES</span> --}}
                 <h1 class="hero_title">One platform for your team and your work</h1>
-                <p class="hero_input">All the features of Slack work together so you can, too.</p>
+                <p class="hero_input double_line">All the features of Slack work together so you can, too.</p>
 
                 <div class="hero_buttons">
-                     <a href="#" class="button button_primary">Try for free</a>
-                     <a href="#" class="button button_secondary">See all features</a>
+                     <a href="#" class="button button_primary click">Try for free</a>
+                     <a href="#" class="button button_secondary click">See all features</a>
                 </div>
+
+                <img src="/img/heroimage.png" alt="hero_image" class="hero_image">
+
+              </div> {{!--class="hero_contant"> --}} 
+              
+              {{!-- <img src="/img/heroimage.png" alt="hero_image" class="hero_image"> --}}
 
             </div> {{!--class="hero"> --}} 
 
-            <img src="/img/heroimage.png" alt="hero_image" class="hero_image">
-                
-		             <div class="brands">
+		 <div class="brands">
                       <img src="/img/brands/airbnb.png" alt="airbnb_logo" class="brands_image">
+                      <img src="/img/brands/target.png" alt="targe_logo" class="brands_image">
                       <img src="/img/brands/uber.png" alt="uber_logo" class="brands_image">
                       <img src="/img/brands/onemedical.png" alt="onemedical_logo" class="brands_image">
                       <img src="/img/brands/newscorp.png" alt="newscorp_logo" class="brands_image">
@@ -49,9 +57,251 @@
                       <img src="/img/brands/sonos.png" alt="sonos_logo" class="brands_image">
                  </div>
            
-           </div> {{!--class="page_content hero_section"> --}}
-          </section>   
-        </div>  
+                 </div> {{!--class="page_content hero_section"> --}}
+          </section>{{!-- Section-1 --}}
+
+          <section class="page_section page_section_light">{{!--Section-2--}}
+
+              <div class="page_content features_section">
+                      <h2 class="features_title">Work more easily with everyone</h2>
+                   <p class="features_description double_line">
+                      Stay on the same page and make decisions faster by bringing all of your 
+                      work communication into one place.
+                   </p>
+              
+                <div class="features_grid_4">
+                   <div class="feat_card">
+                    <span class="icon feat_icon" style="background-image: url('/svg/feature/connect.svg');"></span>
+                        <strong class="feat_card_title">
+                                Slack Connect
+                        </strong>
+                     <p class="feat_card_description double_line">
+                        Collaborate with teams at other companies the same way you do with teams at your own.
+                     </p>
+                     <a href="#" class="icon icon_arrow click feat_link"></a>
+                   </div>
+
+                   <div class="feat_card">
+                    <span class="icon feat_icon" style="background-image: url('/svg/feature/channels.svg');"></span>
+                        <strong class="feat_card_title">
+                                Channels
+                        </strong>
+                     <a href="#" class="icon icon_arrow click feat_link"></a>
+                   </div>
+
+                   <div class="feat_card">
+                    <span class="icon feat_icon" style="background-image: url('/svg/feature/huddles.svg');"></span>
+                        <strong class="feat_card_title">
+                                Huddles
+                        </strong>
+                     <a href="#" class="icon icon_arrow click feat_link"></a>
+                   </div>
+
+                   <div class="feat_card">
+                    <span class="icon feat_icon" style="background-image: url('/svg/feature/clips.svg');"></span>
+                        <strong class="feat_card_title">
+                                Clips
+                        </strong>
+                     <a href="#" class="icon icon_arrow click feat_link"></a>
+                   </div>
+
+                   <div class="feat_card">
+                    <span class="icon feat_icon" style="background-image: url('/svg/feature/canvas.svg');"></span>
+                        <strong class="feat_card_title">
+                                Canvas
+                        </strong>
+                     <a href="#" class="icon icon_arrow click feat_link"></a>
+                   </div>
+
+                   <div class="feat_card">
+                    <span class="icon feat_icon" style="background-image: url('/svg/feature/messaging.svg');"></span>
+                        <strong class="feat_card_title">
+                                Messaging
+                        </strong>
+                     <a href="#" class="icon icon_arrow click feat_link"></a>
+                   </div>
+
+                   <div class="feat_card">
+                    <span class="icon feat_icon" style="background-image: url('/svg/feature/accessibility.svg');"></span>
+                        <strong class="feat_card_title">
+                                Accessibility
+                        </strong>
+                     <a href="#" class="icon icon_arrow click feat_link"></a>
+                   </div>
+
+                </div> {{!-- <class="features_grid_4"> --}}   
+
+              </div> {{!-- class="page_content features_section"> --}}
+
+          {{!-- <div class="what_you_need_section">
+               
+          </div> --}}
+          
+          </section>{{!-- Section-2 --}} 
+
+          <section class="section_what_you_need">{{!--Section-3--}}
+              <div class="content_what_you_need">
+                   <div class="what_you_need_image">
+                        <img src="/img/brands/what-you-need.svg" alt="img-what-you-need" class="what_you_need_image">
+                   </div>
+
+                   <div class="what_you_need_info">
+                        <div class="what_you_need_description">
+                             <h3 class="what_you_need_title">
+                                 What you need, when you need it
+                             </h3>
+                             <p class="what_you_need_text">
+                                Spend less time shuffling tabs with a comprehensive message archive and
+                                all your work tools at your fingertips.
+                             </p>
+                        </div>
+                   </div>
+ 
+                        {{!-- <div class="what_you_need_cards">
+                             
+                        </div> --}}
+              </div>{{!-- <class="content_what_you_need"> --}}
+                    <div class="what_you_need_cards_field">
+                         <div class="what_you_need_cards">
+                              <div class="features_grid_3">
+                                   <div class="feat_card">
+                    <span class="icon feat_icon" style="background-image: url('/svg/feature/apps-integration.svg');"></span>
+                        <strong class="feat_card_title">
+                                Apps and Integrations
+                        </strong>
+                     <p class="feat_card_description double_line">
+                        Streamline work by connecting Slack with other services like Google Drive,
+                         Office 365 and over 2,200 more.
+                     </p>
+                     <a href="#" class="icon icon_arrow click feat_link"></a>
+                                   </div>
+
+                                   <div class="feat_card">
+                    <span class="icon feat_icon" style="background-image: url('/svg/feature/workflow-builder.svg');"></span>
+                        <strong class="feat_card_title">
+                                Workflow Builder
+                        </strong>
+                     <p class="feat_card_description double_line">
+                        Automate routine actions and communication,
+                         so you can get back to the kind of work only humans can do.
+                     </p>
+                     <a href="#" class="icon icon_arrow click feat_link"></a>
+                                   </div>
+
+                                   <div class="feat_card">
+                    <span class="icon feat_icon" style="background-image: url('/svg/feature/search.svg');"></span>
+                        <strong class="feat_card_title">
+                                Search
+                        </strong>
+                     <a href="#" class="icon icon_arrow click feat_link"></a>
+                                   </div>
+
+                                   <div class="feat_card">
+                    <span class="icon feat_icon" style="background-image: url('/svg/feature/file-sharing.svg');"></span>
+                        <strong class="feat_card_title">
+                                File sharing
+                        </strong>
+                     <a href="#" class="icon icon_arrow click feat_link"></a>
+                                   </div>
+
+                              </div> {{!-- <class="features_grid_3"> --}}
+                         </div> {{!-- <class="what_you_need_cards"> --}}     
+                    </div> {{!-- <class="what_you_need_cards_field"> --}}
+          </section>{{!-- Section-3 --}}
+
+          <section class="section_deliveroo_and_working_in_slack">{{!--Section-4--}}
+                   <div class="deliveroo_section">
+                        <div class="deliveroo_image">
+                             <img src="/img/img-deliveroo.png" alt="img-deliveroo" class="deliveroo_image">
+                        </div>
+
+                   <div class="deliveroo_info">
+                        <p class="deliveroo_description">
+                           “The thing that keeps us connected the most is Slack.
+                            It’s a very immediate and straightforward method of communication,
+                             and really the only channel that people prefer and enjoy using.”
+                        </p>
+                           <img src="/img/deliveroo.png" alt="deliveroo-lable">
+                        <p class="deliveroo_signature">Will Sprunt, CIO, Deliveroo</p>   
+                   </div>
+                   </div> {{!-- <class="deliveroo_section"> --}}
+
+                   <div class="work_in_slack_section">
+                        <h5 class="work_in_slack_title">
+                            Explore more about working in Slack
+                        </h5>
+                        <div class="work_in_slack_cards">
+ 
+
+                             <div class="work_in_slack_card">
+                                  <div class="work_in_slack_card_image">
+                                       <img src="/img/workInSlackCards/slack-101.png" alt="img-deliveroo" class="work_in_slack_card_image">
+                                  </div>
+                                  <div class="work_in_slack_card_content">
+                                       <p class="work_in_slack_card_preview">Slack Tutorials</p>
+                                       <p class="work_in_slack_card_description">Slack 101</p>
+                                  </div>     
+                                  <div class="learn_more_container">
+                                            <div class="learn_more"><p>learn more</p></div>
+                                            <div>
+                                            <img src="/img/workInSlackCards/arrow-right-blue.svg" alt="arrow-right-blue" class="arrow_right_blue_image">
+                                            </div>
+                                  </div>
+                             </div>{{!-- <class="work_in_slack_card"> --}}
+
+                             <div class="work_in_slack_card">
+                                  <div class="work_in_slack_card_image">
+                                       <img src="/img/workInSlackCards/slack-vs-email.png" alt="img-deliveroo" class="work_in_slack_card_image">
+                                  </div>
+                                  <div class="work_in_slack_card_content">
+                                       <p class="work_in_slack_card_preview">Slack vs. Email</p>
+                                       <p class="work_in_slack_card_description">An easier, more<br>
+                                       organized way to work</p>
+                                       {{!-- <div class="learn_more_container">
+                                            <div class="learn_more"><p>learn more</p></div>
+                                            <div>
+                                            <img src="/img/workInSlackCards/arrow-right-blue.svg" alt="arrow-right-blue" class="arrow_right_blue_image">
+                                            </div>
+                                       </div> --}}
+                                  </div>
+                                  <div class="learn_more_container">
+                                       <div class="learn_more"><p>learn more</p></div>
+                                       <div>
+                                       <img src="/img/workInSlackCards/arrow-right-blue.svg" alt="arrow-right-blue" class="arrow_right_blue_image">
+                                       </div>
+                                  </div>
+                             </div>{{!-- <class="work_in_slack_card"> --}} 
+
+                             <div class="work_in_slack_card">
+                                  <div class="work_in_slack_card_image">
+                                       <img src="/img/workInSlackCards/fastly-shared-channels-wow-enterprise-customers.png" alt="img-deliveroo" class="work_in_slack_card_image">
+                                  </div>
+                                  <div class="work_in_slack_card_content">
+                                       <p class="work_in_slack_card_preview">Customer Stories</p>
+                                       <p class="work_in_slack_card_description">How Fastly uses Slack<br>
+                                                 Connect to wow<br>
+                                                 enterprise customers</p>
+                                       
+                                       {{!-- <div class="learn_more_container">
+                                            <div class="learn_more"><p>learn more</p></div>
+                                            <div>
+                                            <img src="/img/workInSlackCards/arrow-right-blue.svg" alt="arrow-right-blue" class="arrow_right_blue_image">
+                                            </div>
+                                       </div> --}}
+                                  </div>
+                                  <div class="learn_more_container">
+                                       <div class="learn_more"><p>learn more</p></div>
+                                       <div>
+                                       <img src="/img/workInSlackCards/arrow-right-blue.svg" alt="arrow-right-blue" class="arrow_right_blue_image">
+                                       </div>
+                                  </div>
+                             </div>{{!-- <class="work_in_slack_card"> --}}
+
+                        </div> {{!-- <class="work_in_slack_cards"> --}}
+                   </div>{{!-- <class="work_in_slack_section"> --}} 
+          </section>{{!-- Section-4 --}} 
+
+        </div>{{!-- <class="page"> --}} 
 	</body>
 
 </html>
