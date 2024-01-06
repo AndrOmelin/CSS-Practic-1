@@ -1,0 +1,35 @@
+{{!-- <div class="headerDark"> --}}
+     {{#with header}}
+     <div class="headerLogoNav">
+       
+            <div class="logo">
+                 <span class="badge text-bg-primary">{{brandName}}</span>             
+            </div>
+       
+       <nav>
+            {{> navDark}}
+       </nav>{{!-- <nav class="header_nav"> --}}
+     </div>
+
+          <div class="headerAdUsers">
+               {{!-- {{#with ad}} --}}
+               <div class="adBadgeAndText">
+               <div class="adBadge">
+                    <span class="badge text-bg-primary">Ad</span>             
+               </div>
+                 <div class="adText">
+                      {{#with ad}}
+                      <a class="nav_link" href="{{url}}">{{text}}</a>  
+                      {{/with}}
+                 </div>
+               </div>{{!-- <div class="adBadgeAndText"> --}}
+               <div class="usersHeader">
+                    <span>
+                         Users online: {{userOnline}}
+                    </span>
+               </div>
+          </div>      
+     {{/with}}       
+
+
+     

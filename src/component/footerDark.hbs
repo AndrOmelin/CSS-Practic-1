@@ -1,0 +1,15 @@
+{{!-- <div class="headerDark"> --}}
+     {{#with footer}}
+       {{!-- <div class="footerDark"> --}}
+         <nav class="footerNav">
+              {{#each pages}}
+                      <a class="nav_link" href="{{path}}">{{name}}</a>
+              {{/each}} 
+         </nav>
+       {{!-- </div> --}}
+       <div class="footerCopyright"> 
+            <p>{{copyright}}</p>
+       </div>
+     {{/with}}
+
+     
