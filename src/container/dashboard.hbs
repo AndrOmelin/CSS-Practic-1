@@ -139,20 +139,141 @@
                               </span>
                               <div class="relative vertical vertical--small">
                                    <div class="relative analytic__title__income text text--black">
-                                        $203k
+                                        $205k
                                    </div>
-                                   <div class="text--black text text--small__income">Total Income</div>
+                                   <div class="text--black text text--small__income">Total Outcome</div>
                               </div> {{!-- <relative vertical vertical--small"> --}}
                          </div>
                   </section> {{!-- <class="box analytic_block"> --}}
 
                   <div class="purchase-payment-block">
-                    <div class="purchase__list">
-                    
-                    </div>
+                    <div class="purchase-list">
+                         <h4 class="purshase-list__header">
+                             Purshase list
+                         </h4>
+                         <div class="purchase-payment__downline"></div>
+                              <div class="purchase-block-container">
+                                   <div class="purchase-section">
+                                        <p class="purchase-description">ID437661</p>
+                                        <p class="purchase-description">May 11, 2023, 14:21</p>
+                                   </div> {{!-- <class="purchase-section"> --}}
 
-                    <div class="payment">                  
-                    </div>
+                                   <div class="purchase-section">
+                                        <p class="purchase-description">AirOn ProCam</p>
+                                        <p class="purchase-description">7/8 USB Type-C</p>
+                                   </div> {{!-- <class="purchase-section"> --}}
+
+                                   <div class="purchase-section">
+                                        <p class="purchase-description">132.32 EUR</p>
+                                        <p class="purchase-description purchase-description__not-paid-red-font">Not paid</p>
+                                   </div> {{!-- <class="purchase-section"> --}}
+
+                                   <div class="purchase-section">
+                                        <p class="purchase-description">Customer</p>
+                                        <p class="purchase-description">robin@com.de</p>
+                                   </div> {{!-- <class="purchase-section"> --}}          
+                              </div>
+                         <div class="purchase-payment__downline"></div>     
+                              
+                              <div class="purchase-block-container">
+                                   <div class="purchase-section">
+                                        <p class="purchase-description">ID437678</p>
+                                        <p class="purchase-description">May 12, 2023, 14:56</p>
+                                   </div> {{!-- <class="purchase-section"> --}}
+
+                                   <div class="purchase-section">
+                                        <p class="purchase-description">PHILIPS Essential</p>
+                                        <p class="purchase-description">HD9200/90</p>
+                                   </div> {{!-- <class="purchase-section"> --}}
+
+                                   <div class="purchase-section">
+                                        <p class="purchase-description">543 USD</p>
+                                        <p class="purchase-description purchase-description__pay-green-font">
+                                                  Pay by  Stripe
+                                        </p>
+                                   </div> {{!-- <class="purchase-section"> --}}
+
+                                   <div class="purchase-section">
+                                        <p class="purchase-description">Customer</p>
+                                        <p class="purchase-description">dima@com.ua</p>
+                                   </div> {{!-- <class="purchase-section"> --}}          
+                              </div>
+                    </div> {{!-- <class="purchase-list"> --}}
+
+                    <div class="payment-block">
+                         <h4 class="payment-block__header">
+                             Payment
+                         </h4>
+                         <div class="purchase-payment__downline"></div>
+                              <div class="payment-radiobutton">
+                                   <input id="creditCard" type="radio" name="question">
+                                   <label class="payment-radiobutton__label" for="creditCard">Credit card</label>
+                              </div>
+
+                              <div class="payment-radiobutton">
+                                   <input id="debitCard" type="radio" name="question">
+                                   <label class="payment-radiobutton__label" for="debitCard">Debit card</label>
+                              </div>
+
+                              <div class="payment-radiobutton">
+                                   <input id="payPal" type="radio" name="question">
+                                   <label class="payment-radiobutton__label" for="payPal">PayPal</label>
+                              </div>
+
+                         <div class="payment-input-bloc">
+                                   <div class="payment-input-box">
+                                     <label class="payment-input-and-select-name">Name on card</label><br>
+                                     <input class="payment-input" type="text">
+                                   </div>{{!-- <class="payment-input-box"> --}}
+
+                                   <div class="payment-input-box">
+                                     <label class="payment-input-and-select-name">Credit card number</label><br>
+                                     <input class="payment-input" type="text">
+                                   </div>{{!-- <class="payment-input-box"> --}}
+
+                                   <div class="payment-input-box">
+                                     <label class="payment-input-and-select-name">Expiration</label><br>
+                                     <input class="payment-input" type="text">
+                                   </div>{{!-- <class="payment-input-box"> --}}
+
+                                   <div class="payment-input-box">
+                                     <label class="payment-input-and-select-name">CVV</label><br>
+                                     <input class="payment-input" type="text">
+                                   </div>{{!-- <class="payment-input-box"> --}}          
+                         </div>{{!-- <class="payment-input-bloc"> --}} 
+<div class="purchase-payment__downline"></div> 
+          <div class="payment-selects-block">
+               <div class="payment-select-box">
+                      <p class="payment-input-and-select-name">Country</p>
+                      <div class="payment-search-icon"></div>
+                      <select class="payment-select" name="Country">
+                        <option selected>Choose...</option>   
+                        <option value="1">Ukraine</option>
+                        <option value="2">Brazil</option>
+                        <option value="3">USA</option>
+                      </select>
+               </div>{{!-- <class="payment-selects-box"> --}}
+               <div class="payment-select-box">
+                      <p class="payment-input-and-select-name">State</p>
+                      <div class="payment-search-icon"></div>
+                      <select class="payment-select" name="State">
+                        <option selected>Choose...</option>   
+                        <option value="1">Minesota</option>
+                        <option value="2">Alabama</option>
+                        <option value="3">Texas</option>
+                      </select>
+               {{!-- <div class="payment-search-icon"></div> --}}
+               </div>{{!-- <class="payment-selects-box"> --}}      
+          </div>{{!-- <class="payment-selects-block"> --}}
+<div class="purchase-payment__downline"></div>
+          {{!-- <div class="payment-button-continue-box"> --}}
+               <a href="#" class="payment-button-href">
+                  <div class="payment-button-continue nav-button--active click">
+                       Continue to checkout
+                  </div>
+               </a>
+          {{!-- </div>                                        --}}
+                    </div>{{!-- <class="payment-block"> --}}
                   </div> {{!-- <class="purchase__payment"> --}}
 
                </div>{{!-- <class="layout"> --}}
